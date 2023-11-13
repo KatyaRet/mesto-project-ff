@@ -22,8 +22,9 @@ function createCard(cardTitle, cardImage, deletedCard) {
 };
 
 // @todo: Функция удаления карточки
-const deleteCard = (evt) => {
-    evt.target.closest.remove();
+const deleteCard = (event) => {
+    const item = event.target.closest('.card');
+    item.remove();
 };
 
 // @todo: Вывести карточки на страницу
